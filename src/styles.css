@@ -1,0 +1,167 @@
+:root {
+  color-scheme: dark;
+  font-family: Pretendard, Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #111318;
+  color: #eceff4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #111318;
+  color: #eceff4;
+}
+
+.app-shell {
+  width: min(1100px, 95vw);
+  margin: 0 auto;
+  padding: 24px 0 48px;
+  display: grid;
+  gap: 16px;
+}
+
+.panel {
+  background: #1a1f29;
+  border: 1px solid #2a3140;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.project-form {
+  display: grid;
+  gap: 12px;
+}
+
+label {
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  background: #0f141d;
+  color: #eceff4;
+  border: 1px solid #303a4c;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 9px 12px;
+}
+
+.primary-btn {
+  background: #4f8cff;
+  color: white;
+}
+
+.secondary-btn {
+  background: #2b3445;
+  color: #dce4f5;
+}
+
+.danger-btn {
+  background: #653040;
+  color: #ffe0ea;
+}
+
+.form-actions,
+.item-actions,
+.status-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.project-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.project-item {
+  background: #141923;
+  border: 1px solid #2a3140;
+  border-radius: 10px;
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.project-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.meta {
+  margin: 0;
+  color: #b7c2d9;
+  font-size: 14px;
+}
+
+.memo {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.status-btn {
+  background: #253042;
+  color: #d5dcef;
+  font-size: 13px;
+}
+
+.status-btn.active {
+  background: #4f8cff;
+  color: #ffffff;
+}
+
+.priority-chip {
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.priority-낮음 {
+  background: #27422b;
+}
+
+.priority-보통 {
+  background: #27406b;
+}
+
+.priority-높음 {
+  background: #6b2735;
+}
+
+.empty {
+  color: #9da8bf;
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+  .app-shell {
+    width: min(98vw, 1100px);
+    padding-top: 14px;
+  }
+
+  .panel {
+    padding: 12px;
+  }
+}
